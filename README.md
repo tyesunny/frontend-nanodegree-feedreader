@@ -5,16 +5,16 @@ In this project you are given a web-based application that reads RSS feeds. The 
 ## Test suite added
 
 * RSS Feeds
- * are defined
- * has a URL property defined and that the URL is not empty in each feed
- * has a name property defined and that the name is not empty in each feed
+  * are defined
+  * has a URL property defined and that the URL is not empty in each feed
+  * has a name property defined and that the name is not empty in each feed
 * The menu
- * is hidden by default
- * changes visibility when the menu icon is clicked
+  * is hidden by default
+  * changes visibility when the menu icon is clicked
 * Initial Entries
- * when the loadFeed function is called and completes its work, there is at least a single .entry element within the .feed container.
+  * when the loadFeed function is called and completes its work, there is at least a single .entry element within the .feed container.
 * New Feed Selection
- * when a new feed is loaded by the loadFeed function that the content actually changes.
+  * when a new feed is loaded by the loadFeed function that the content actually changes.
 
 ## How to run
 
