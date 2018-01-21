@@ -72,7 +72,7 @@ $(function() {
           const menuIcon = $('.menu-icon-link');
           const body = $('body');
           // click once to display the menu
-          menuIcon.trigger('click');
+          menuIcon.click();
           expect(body.hasClass('menu-hidden')).toBe(false);
           // click again to hide the menu
           menuIcon.trigger('click');
@@ -93,7 +93,7 @@ $(function() {
            loadFeed(0, done);
        });
        it('when the loadFeed function is called and completes its work, there is at least a single .entry element within the .feed container.', function() {
-         const entry = $('.entry');
+         const entry = $('.feed .entry');
          expect(entry.length).toBeGreaterThan(0);
        });
      });
@@ -114,7 +114,7 @@ $(function() {
            firstFeedContent = $('.feed').html();
            // Load second feed
            loadFeed(1, done);
-           });
+         });
        });
 
        it('when a new feed is loaded by the loadFeed function that the content actually changes.', function() {
